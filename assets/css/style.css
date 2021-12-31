@@ -7,8 +7,11 @@ GLOBALS
 :root {
     --bg-primary: #c30c12;
     --bg-secondary: #002553;
+    --bg-thirty: #f1f1f1;
     --color-red: #c30c12;
     --color-grayscale: #41516a;
+    --color-blue: #002553;
+    --color-yellow: #feb238;
     box-shadow: none !important;
     outline: 0;
 }
@@ -54,11 +57,18 @@ body {
     font-family: 'Nexa-Black';
 }
 
-.text-outline {
+.text-outline-grayscale {
     color: #E6E6E6;
     -webkit-text-fill-color: #E6E6E6; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #41516a;
+}
+
+.text-outline-blue {
+    color: #fff;
+    -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-blue);
 }
 
 /********************************
@@ -72,6 +82,18 @@ HELPERS
 
 .color-white {
     color: #fff;    
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-yellow {
+    color: var(--color-yellow);
+}
+
+.color-red {
+    color: var(--color-red);
 }
 
 /* SPACES */
@@ -160,7 +182,7 @@ STYLES
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .cta-work-description .title {
@@ -197,6 +219,72 @@ STYLES
 .owl-testimonials .card-body {
     padding-left: 350px;
     padding-right: 350px;
+}
+
+.sd-header {
+    background-image: url('../images/background/bg-header-internal-service-detail.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+}
+
+.sd-description {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sd-description .title {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.sd-about {
+    background-color: var(--bg-secondary);
+    min-height: 400px;
+}
+
+.sd-about img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.sd-about .col-custom {
+    padding-left: 120px;    
+}
+
+.sd-about .col-custom p {
+    padding-right: 200px;
+}
+
+.sd-detailing {
+    background-color: var(--bg-thirty); 
+    min-height: 40vh;
+}
+
+.sd-detailing img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.sd-detailing .col-custom {
+    padding-left: 80px;    
+    padding-right: 120px;
+}
+
+.sd-paint-correction {
+    background-image: url('../images/background/bg-sd-paint-correction.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80vh;    
+}
+
+.sd-package {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .footer {
