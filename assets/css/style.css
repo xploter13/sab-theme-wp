@@ -10,6 +10,8 @@ GLOBALS
     --bg-thirty: #f1f1f1;
     --color-red: #c30c12;
     --color-grayscale: #41516a;
+    --color-silver: #cfc3af;
+    --color-blue-light: #a6d7e3;
     --color-blue: #002553;
     --color-yellow: #feb238;
     box-shadow: none !important;
@@ -22,6 +24,8 @@ a:focus {
     outline: none;
     box-shadow: none !important;
 }
+
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -49,6 +53,15 @@ body {
     padding: 10px 40px;
 }
 
+.btn-red {
+    background-color: var(--bg-primary);
+    text-transform: uppercase;
+    font-family: 'Nexa-Bold';
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
 .text-subtitle {
     font-family: 'Nexa-Bold';
 }
@@ -69,6 +82,24 @@ body {
     -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--color-blue);
+}
+
+.text-outline-white {
+    color: #fff;
+    -webkit-text-fill-color: #001022; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg-red {
+    background-color: var(--bg-primary);
 }
 
 /********************************
@@ -96,6 +127,14 @@ HELPERS
     color: var(--color-red);
 }
 
+.color-silver {
+    color: var(--color-silver);
+}
+
+.color-blue-light {
+    color: var(--color-blue-light);
+}
+
 /* SPACES */
 .p-20 {
     padding-top: 20px;
@@ -113,6 +152,10 @@ HELPERS
 
 .ptb-80 {
     padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pb-80 {
     padding-bottom: 80px;
 }
 
@@ -285,6 +328,83 @@ STYLES
 .sd-package {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.sd-package img,
+.sd-gallery img {
+    border-radius: 0;
+}
+
+.sd-package .card-package .card-body {
+    position: relative;
+    top: 15%;
+}
+
+.sd-package .card-package .logo-package {
+    width: 150px;
+    height: auto;
+}
+
+.sd-package .card-package .card-title {
+    font-family: 'Nexa-Black';
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+.sd-package .card-package .divider {
+    background-color: #fff;
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sd-package .card-package .card-link {
+    background-color: var(--bg-primary);
+    border-radius: 50px;
+    font-family: 'Nexa-Black';
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sd-package .card-package .card-link-gold:hover {
+    color: var(--color-yellow);
+    transition: ease-in-out .2s;
+}
+
+.sd-package .card-package .card-link-pearl:hover {
+    color: var(--color-silver);
+    transition: ease-in-out .2s;
+}
+
+.sd-package .card-package .card-link-diamond:hover {
+    color: var(--color-blue-light);
+    transition: ease-in-out .2s;
+}
+
+.sd-gallery .card-gallery .card-link-play-button {
+    padding: 26px 30px;
+    background-color: var(--bg-primary);
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+.sd-before-after {
+    background-image: url('../images/background/before-after.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.sd-before-after .title {
+    font-size: 8rem;
+    line-height: 110px;
 }
 
 .footer {
