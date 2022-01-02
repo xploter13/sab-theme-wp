@@ -207,7 +207,7 @@ STYLES
     background-size: cover;
     background-position: center -250px;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    height: 80vh;
 }
 
 .owl-service .item .card {
@@ -225,7 +225,7 @@ STYLES
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    height: 80vh;
 }
 
 .cta-work-description .title {
